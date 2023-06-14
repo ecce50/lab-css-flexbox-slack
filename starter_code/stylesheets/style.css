@@ -8,3 +8,443 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 60px;
+}
+
+body {
+  font-family: "Helvetica Neue";
+}
+
+/* Navgiation */
+
+nav {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #540b51;
+}
+
+nav img {
+  height: 24px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+.navIcons > button {
+  background-color: transparent;
+  border: none;
+}
+
+.navIcons > button > img {
+  height: 18px;
+}
+
+/* Header */
+
+header > div {
+  background-color: #540b51;
+  padding: 32px 16px 0px 16px;
+}
+
+header > div > h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header > div > p > span {
+  color: #ecb12f;
+  font-weight: bold;
+}
+
+header > div > p {
+  /* font-weight: bold; */
+  text-align: center;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.signupButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emailSignup {
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  width: 40vh;
+  height: 3rem;
+}
+
+.googleSignup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #4285f4;
+  width: 40vh;
+  height: 3rem;
+  color: white;
+}
+
+.googleSignup > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.googleSignup > img {
+  width: 24px;
+  padding: 4px;
+  background-color: white;
+}
+
+.screenshot {
+  width: 40vh;
+}
+
+.recoSection {
+  background-color: #f3eae2;
+  padding: 0 16px 0 16px;
+}
+
+.recoSection > p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 32px 0 0px 0;
+}
+
+.recoIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0 32px 0;
+}
+
+.recoIcons > img {
+  height: 36px;
+  width: auto;
+  padding: 8px;
+}
+
+h2 {
+  padding: 32px 0 16px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main > section > div > p {
+  line-height: 1.5rem;
+  padding-bottom: 16px;
+}
+
+main > section > div > a {
+  text-decoration: none;
+  color: #2e71a6;
+}
+
+main > section > div {
+  padding-bottom: 32px;
+}
+
+.teamsInfo {
+  padding: 0 32px 0 32px;
+  background-color: white;
+}
+
+.teamsInfo h3 {
+  padding: 64px 0 32px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.teamsInfo p {
+  text-align: center;
+  padding: 0 0 32px 0;
+}
+
+.enterpriseButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.enterpriseButton {
+  border: none;
+  background-color: #540b51;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 40vh;
+  height: 3rem;
+}
+
+.talkSalesButton {
+  background-color: white;
+  border: 1px solid #540b51;
+  color: #540b51;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 40vh;
+  height: 3rem;
+}
+
+.factsFigures > p > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #540b51;
+}
+
+.factsFigures > p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.digitalHQ {
+  padding: 32px 16px 32px 16px;
+  background-color: #540b51;
+}
+
+.digitalHQ > h3 {
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.tryFreeButton {
+  border: 1px solid white;
+  background-color: #540b51;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 40vh;
+  height: 3rem;
+}
+
+.columnPacket {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowPacket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerIcon {
+  width: 32px;
+  padding: 16px;
+}
+
+.columnHeadline {
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+.columnPacket > li {
+  font-size: 0.6rem;
+  padding: 0.8rem;
+  color: #454245;
+}
+
+.divider {
+  margin: 24px 16px 24px 16px;
+  border-top: 1px lightgrey solid;
+}
+
+.footerLinks > li {
+  display: list-item;
+  padding-left: 16px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+#changeRegion > li {
+  list-style-image: url("./images/icon-region.png");
+}
+
+#downloadSlack > li {
+  color: #000000;
+  list-style-image: url("./images/icon-download.png");
+}
+
+hr {
+  border: none;
+}
+
+.soMeIcons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px 32px 16px;
+}
+
+.legalText {
+  margin: 24px 16px 64px 16px;
+  font-size: 0.6rem;
+  color: #959195;
+}
+
+@media (width < 768px) {
+  .headerLinks {
+    display: none;
+  }
+}
